@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgb(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-grey: #808080;
 }
 
 body {
@@ -19,6 +22,8 @@ nav {
 
 .logo {
   width: 3.75rem;
+  background-color: antiquewhite;
+  border-radius: 30px;
 }
 
 /*************NAV LINKS***********************/
@@ -108,4 +113,104 @@ nav ul li {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+/***********************ABOUT ME*****************************/
+.about-me-container {
+  background-color: beige;
+}
+
+.about-me-container .col-sm {
+  text-align: center;
+  align-items: center;
+}
+.about-me-heading {
+  color: var(--primary-black);
+  margin: 1.5625rem;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 5rem;
+}
+.about-me-summary {
+  color: var(--primary-grey);
+  text-align: left;
+  margin: 1.5625rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+
+.about-me-detail {
+  color: var(--primary-grey);
+  text-align: left;
+  margin: 1.5625rem;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+.about-me-img {
+  margin-left: 0px;
+  height: 68vh;
+}
+
+.about-me-thumbnails {
+  height: 20vh;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/***********************************SERVICES****************************/
+.services-row-1 {
+  background-image: url(./components/services-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 85vh;
+}
+.services-row-1 .col-sm {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-heading {
+  text-transform: uppercase;
+  color: var(--primary-white);
+  margin-top: 6.25rem;
+  font-size: 3.125rem;
+  word-wrap: normal;
+}
+
+.services-summary {
+  color: aliceblue;
+  margin-top: 2.1875rem;
+  margin-bottom: 2.1875rem;
+}
+
+.see-our-services-button {
+  background-color: #ff1856;
+  border: 0px;
+  border-radius: 5px;
+  color: var(--primary-white);
+  border-color: #ff1856;
+  margin: 2rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 4.524886877828054vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 35px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.see-our-services-button-wrapper {
+  position: relative;
 }

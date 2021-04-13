@@ -2,27 +2,25 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Particles from "react-particles-js";
+import AboutMe from "./components/AboutMe";
+import Service from "./components/Service";
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <Particles
-      params={{
-        particles: {
-          number:{
-            value: 30,
-            density: {
-              enable: true,
-              value_area: 900
-            }
-          }
-        }
-      }}
-    />
+    <HashRouter>
       <Navbar/>
-      <Header/>
-    </>
+      <Route exact path="/" component={Header}/>
+      <Route path="/about-me" component={AboutMe}/>
+      <Route path="/services" component={Service}/>
+      <Route path="/how-work" component={Header}/>
+      <Route path="/portfolio" component={Header}/>
+      <Route path="/contacts" component={Header}/>
+    </HashRouter>
   );
 }
 
